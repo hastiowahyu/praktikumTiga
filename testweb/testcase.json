@@ -1,0 +1,82 @@
+[
+    {
+      "testcase_name": "masukan nama dengan benar",
+      "data": {
+        "username": "",
+        "emailid": "hastiowahyu@gmail.com",
+        "mobileno": "081258655551",
+        "password": "hastio12345"
+      },
+      "expected": "*silahkan masukan nama anda dengan benar"
+    },
+    {
+      "testcase_name": "masukan alfabet",
+      "data": {
+        "username": "hastio123",
+        "emailid": "hastiowahyu@gmail.com",
+        "mobileno": "081258655551",
+        "password": "hastio12345"
+      },
+      "expected": "*harap masukan karakter alfabet saja."
+    },
+    {
+      "testcase_name": "masukan email",
+      "data": {
+        "username": "hastio wahyu",
+        "emailid": "",
+        "mobileno": "081258655551",
+        "password": "hastio12345"
+      },
+      "expected": "*harap masukan email anda."
+    },
+    {
+      "testcase_name": "masukan email valid",
+      "data": {
+        "username": "hastio wahyu",
+        "emailid": "hastio",
+        "mobileno": "081258655551",
+        "password": "hastio12345"
+      },
+      "expected": "*harap masukan email yang valid."
+    },
+    {
+      "testcase_name": "masukan no ponsel",
+      "data": {
+        "username": "hastio wahyu",
+        "emailid": "hastiowahyu@gmail.com",
+        "mobileno": "",
+        "password": "hastio12345"
+      },
+      "expected": "*masukan nomor ponsel anda"
+    },
+    {
+      "testcase_name": "masukan no ponsel valid",
+      "data": {
+        "username": "hastio wahyu",
+        "emailid": "hastiowahyu@gmail.com",
+        "mobileno": "081",
+        "password": "hastio12345"
+      },
+      "expected": "*masukan nomor ponsel yang valid"
+    },
+    {
+      "testcase_name": "masukan password",
+      "data": {
+        "username": "hastio wahyu",
+        "emailid": "hastiowahyu@gmail.com",
+        "mobileno": "081",
+        "password": ""
+      },
+      "expected": "*harap masukan password"
+    },
+    {
+      "testcase_name": "masukan password kuat",
+      "data": {
+        "username": "hastio wahyu",
+        "emailid": "hastiowahyu@gmail.com",
+        "mobileno": "081",
+        "password": "1234"
+      },
+      "expected": "*Harap masukkan password yang aman dan kuat"
+    }
+  ]
