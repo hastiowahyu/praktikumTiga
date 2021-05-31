@@ -106,13 +106,13 @@ class RegisterForm extends React.Component {
      <div id="register">
         <h3>Registration</h3>
         <form method="post"  name="userRegistrationForm"  onSubmit= {this.submituserRegistrationForm} >
-        <label>Name</label>
+        <label>Username</label>
         <input type="text" name="username" value={this.state.fields.username} onChange={this.handleChange} />
         <div className="errorMsg">{this.state.errors.username}</div>
-        <label>Email ID:</label>
+        <label>Email:</label>
         <input type="text" name="emailid" value={this.state.fields.emailid} onChange={this.handleChange}  />
         <div className="errorMsg">{this.state.errors.emailid}</div>
-        <label>Mobile No:</label>
+        <label>Nomor telphone:</label>
         <input type="text" name="mobileno" value={this.state.fields.mobileno} onChange={this.handleChange}   />
         <div className="errorMsg">{this.state.errors.mobileno}</div>
         <label>Password</label>
